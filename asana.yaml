@@ -4198,6 +4198,16 @@ paths:
 
         Returns the complete updated tag record.
       operationId: updateTag
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                data:
+                  $ref: "#/components/schemas/TagRequest"
+              type: object
+        description: The tag to update.
+        required: true
       responses:
         "200":
           content:

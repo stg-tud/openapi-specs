@@ -3105,7 +3105,9 @@ paths:
               properties:
                 channel_ids:
                   description: An array of channel IDs.
-                  type: string
+                  items:
+                    type: string
+                  type: array
                 team_id:
                   description: ID for the workspace to set the default channel for.
                   type: string
